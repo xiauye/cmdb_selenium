@@ -2,6 +2,10 @@
 python_cmdb_selenium
 
 环境：python3.6
+测试项目地址：https://github.com/guhongze/adminset 
+
+将一下信息保存：requirements.txt
+pip install -r requirements.txt
 
 ddt==1.3.0
 et-xmlfile==1.0.1
