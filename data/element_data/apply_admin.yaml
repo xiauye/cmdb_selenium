@@ -1,0 +1,80 @@
+apply_admin:
+    apply_admin_menu: '//*[@id="appconf"]/a/i'
+
+public_button:
+    submit_button: '//input[@value="提交"]'
+    return_button: '//li[text()="返回"]'
+
+#负责人管理
+person_admin:
+    person_admin_menu: '//b[text()="负责人管理"]'
+    person_button_add: '//b[text()="添加负责人"]'
+    name: '//label[text()="负责人姓名:"]/../input'
+    phone: '//label[text()="负责人手机:"]/../input'
+    QQ: '//label[text()="负责人QQ:"]/../input'
+    WeChat: '//label[text()="负责人微信:"]/../input'
+    id_check: '//td[text()="李四 "]'
+
+#删除
+person_delete:
+    checkall_button: '//*[@id="checkall"]'
+    delete_button: '//*[@value="删除负责人"]'
+
+#认证管理
+cert_admin:
+    cert_admin_menu: '//b[text()="认证管理"]'
+    cert_button_add: '//b[text()="添加认证"]'
+    mark: '//label[text()="认证标识:"]/../input'
+    username: '//label[text()="用户名:"]/../input'
+    password: '//label[text()="密码:"]/../input'
+    port: '//label[text()="端口:"]/../input'
+    key: '//label[text()="密钥:"]/../input'
+    remarks: '//label[text()="备注信息:"]/../input'
+    id_check: '//td[text()="cmdb001 "]'
+
+cert_delete:
+    checkall_button: '//*[@id="checkall"]'
+    delete_button: '//*[@value="删除认证"]'
+
+#产品线管理
+product_admin:
+    product_admin_menu: '//b[text()="产品线管理"]'
+    product_button_add: '//b[text()="添加产品线"]'
+    product_name: '//label[text()="产品线名称:"]/../input'
+    describe: '//label[text()="产品线描述:"]/../textarea'
+    person: '//label[text()="产品线负责人:"]/../select'
+#    product_button_add: '//b[text()="添加负责人"]'
+    id_check: '//li[text()="运维系统生产线"]'
+
+product_delete:
+    checkall_button: '//*[@id="checkall"]'
+    delete_button: '//*[@value="删除产品线"]'
+
+#项目管理
+project_admin:
+    project_admin_menu: '//b[text()="项目管理"]'
+    project_admin_add: '//b[text()="添加项目"]'
+    name: '//label[text()="项目名称:"]/../input'
+    describe: '//label[text()="项目描述:"]/../textarea'
+    language_type: '//label[text()="语言类型:"]/../select'
+    program_type: '//label[text()="程序类型:"]/../select'
+    server_type: '//label[text()="服务器类型:"]/../select'
+    program_frame: '//label[text()="程序框架:"]/../select'
+    source_type: '//label[text()="源类型:"]/../select'
+    address: '//label[text()="源地址:"]/../input'
+    deploy_path: '//label[text()="程序部署路径:"]/../input'
+    config_path: '//label[text()="配置文件路径:"]/../input'
+    product_line: '//label[text()="所属产品线:"]/../select'
+    project_person: '//label[text()="项目负责人:"]/../select'
+    choice_server: '//label[text()="可选择服务器"]/../input'
+    server_right_button: '/html/body/div[2]/div[1]/section[2]/div/div[2]/form/p[13]/div/div[1]/div/button[1]'
+    id_check: '//td[text()="资产管理系统 "]'
+
+project_delete:
+    checkall_button: '//*[@id="checkall"]'
+    delete_button: '//*[@value="删除项目"]'
+
+checkpoint:
+    fail: '//h4[text()="增加失败！"]'
+    success: '/html/body/div[2]/div[1]/section[1]/div/h4'
+

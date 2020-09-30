@@ -1,0 +1,18 @@
+login:
+    url: "http://127.0.0.1:8000/"
+#    denglu: "请登录"
+    AdminSet: '//b[text()="AdminSet"]'
+    username: "username"
+    password: "password"
+    denglu: "//button[text()='登录']"
+    AST: '//html/body/div[2]/header/a/span[1]/b'
+    error: '//li[text()="账号密码不匹配"]'
+
+
+#    public
+    add_pass: "//h4[text()='增加成功！']"
+    add_fail: "//h4[text()='增加失败！']"
+
+    iframe: '//iframe[@id="layui-layer-iframe1"]'
+
+

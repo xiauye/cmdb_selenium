@@ -1,0 +1,16 @@
+case #测试用例
+config #文件读取
+data #测试数据
+    data_source # 测试数据
+    data_write # 写入测试
+    element_data #页面元素定位
+package #第三方包
+report #测试报告
+    logs #日志存放
+    report # 测试报告
+    screenshot # 截图
+
+
+
+
+#     https://www.cnblogs.com/linuxchao/p/linuxchao-python-selenium-demo.html

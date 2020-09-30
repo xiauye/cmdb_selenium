@@ -1,0 +1,104 @@
+#主机管理
+host_manage_add:
+    navigation: '//html/body/div[2]/header/nav/a'
+    asset_menu: '//span[text()="资产管理"]'
+    host_menu: '//span[contains (text(),"主机管理")]'
+    add_button: '//a[text()="添加设备"]'
+    add_host_content: '//h3[text()="添加主机条目"]'
+
+    host_name: '//label[text()="主机名:"]/../input'
+    ip: '//label[text()="管理IP:"]/../input'
+
+    number: '//label[text()="账号信息:"]/../select'
+    computer: '//label[text()="所在机房:"]/../select'
+
+    other_ip: '//label[text()="其它IP:"]/../input'
+    asset_number: '//label[text()="资产编号:"]/../input'
+
+    device_type: '//label[text()="设备类型:"]/../select'
+    device: '//label[text()="设备状态:"]/../select'
+
+    system: '//label[text()="操作系统:"]/../input'
+    equipment: '//label[text()="设备厂商:"]/../input'
+    upper_time: '//label[text()="上架时间:"]/../input'
+    cpu_type: '//label[text()="CPU型号:"]/../input'
+    cpu_number: '//label[text()="CPU数量:"]/../input'
+    memory: '//label[text()="内存大小:"]/../input'
+    disk: '//label[text()="硬盘信息:"]/../input'
+    sn_number: '//label[text()="SN号 码:"]/../input'
+    position: '//label[text()="所在位置:"]/../input'
+    remarks: '//label[text()="备注信息:"]/../textarea'
+
+    submit_button: '//input[@value="提交"]'
+    return_button: '//li[text()="返回"]'
+
+    add_pass: "//h4[text()='增加成功！']"
+    add_fail: "//h4[text()='增加失败！']"
+#    编辑
+    update_button: "//li[text()=' 资产管理系统']/../../../td/div/a[text()='编辑']"
+    host_update: "//div[text()='修改主机信息']"
+    iframe: '//iframe[@id="layui-layer-iframe1"]'
+    preservation_button: '//input[@value="保存"]'
+    host_name_update: '//li[contains(text(),"资产管理系统")]'
+
+#机房管理
+computer_manage_add:
+    navigation: '//html/body/div[2]/header/nav/a'
+    asset_menu: '//span[text()="资产管理"]'
+    computer_menu: '//span[contains (text(),"机房管理")]'
+    add_button: '//a[text()="添加机房"]'
+
+    sign: '//label[text()="机房标识:"]/../input'
+    computer_name: '//label[text()="机房名称:"]/../input'
+    address: '//label[text()="机房地址:"]/../input'
+    computer_phone: '//label[text()="机房电话:"]/../input'
+    manager: '//label[text()="客户经理:"]/../input'
+    phone: '//label[text()="移动电话:"]/../input'
+    cabinet: '//label[text()="机柜信息:"]/../input'
+    ip: '//label[text()="IP范围:"]/../input'
+    bandwidth: '//label[text()="接入带宽:"]/../input'
+    remarks: '//label[text()="备注信息:"]/../textarea'
+
+    submit_button: '//input[@value="提交"]'
+    return_button: '//li[text()="返回"]'
+
+    add_pass: "//h4[text()='增加成功！']"
+    add_fail: "//h4[text()='增加失败！']"
+
+    update_button: "//li[text()='运维机房']/../../../td[8]/a[text()='编辑']"
+    get_remarks: "//td[contains(text(),'运维机房')]"
+
+
+#机柜管理
+cabinet_add:
+    navigation: '//html/body/div[2]/header/nav/a'
+    asset_menu: '//span[text()="资产管理"]'
+    cabinet_menu: '//span[contains (text(),"机柜管理")]'
+    cabinet_button: '//a[text()="添加机柜"]'
+
+    computer: '//label[text()="所在机房:"]/../select'
+    cabinet: '//label[text()="机柜:"]/../input'
+    describe: '//label[text()="描述:"]/../textarea'
+    choice_server: '//label[text()="可选择服务器"]/../input'
+    server_right_button: '/html/body/div[2]/div[1]/section[2]/div/div[2]/form/p[4]/div/div[1]/div/button[1]'
+
+    submit_button: '//input[@value="提交"]'
+    return_button: '//li[text()="返回"]'
+    id_check: '//li[text()="资产系统机柜"]'
+
+#属组管理
+group_manage:
+    navigation: '//html/body/div[2]/header/nav/a'
+    asset_menu: '//span[text()="资产管理"]'
+    group_menu: '//span[contains (text(),"属组管理")]'
+    group_button: '//a[text()="添加组"]'
+
+    server_group: '//label[text()="服务器组名:"]/../input'
+    describe: '//label[text()="描述:"]/../textarea'
+    choice_server: '//label[text()="可选择服务器"]/../input'
+    server_right: '/html/body/div[2]/div[1]/section[2]/div/div[2]/form/p[3]/div/div[1]/div/button[1]'
+
+    submit_button: '//input[@value="提交"]'
+    return_button: '//li[text()="返回"]'
+
+    id_check: '//li[text()="cmdb服务器"]'
